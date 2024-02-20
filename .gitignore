@@ -1,0 +1,5 @@
+.vscode
+cachegrind-*
+plain
+oblivious
+aware
