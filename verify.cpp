@@ -8,7 +8,7 @@ int main() {
     init();
     plain();
     memcpy(copy, result, sizeof(copy));
-    aware();
+    oblivious();
     for (int i = 0; i < MATRIX_SIZE; i++) {
         for (int j = 0; j < MATRIX_SIZE; j++) {
             if (copy[i][j] != result[i][j]) {
