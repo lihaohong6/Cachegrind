@@ -1,1 +1,1 @@
-rm -f aware oblivious plain example
+rm -f aware oblivious plain example cachegrind-*

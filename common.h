@@ -3,8 +3,10 @@
 #include <cstdlib>
 #include <random>
 #include <iostream>
+#include <functional>
 
 const size_t MATRIX_SIZE = 1 << 10;
+const size_t LOOP_REPETITION = 1;
 
 int original[MATRIX_SIZE][MATRIX_SIZE];
 int result[MATRIX_SIZE][MATRIX_SIZE];
@@ -38,3 +40,10 @@ void aware() {
         }
     }
 }
+
+void run(std::function<void()> f) {
+    init();
+    for (size_t i = 0; i < LOOP_REPETITION; i++) {
+        f();
+    }
+} 

@@ -1,7 +1,6 @@
 #include "common.h"
 
 int main() {
-    init();
-    plain();
+    run(plain);
     return 0;
 }

@@ -1,5 +1,4 @@
 [ $# -ne 1 ] && echo "Need an argument specifying file name" && exit 1
-./clean.sh
 g++ -O2 -g -o $1 $1.cpp -std=c++17 && \
   echo "Compilation done. Running" && \
   chmod 544 $1 && \

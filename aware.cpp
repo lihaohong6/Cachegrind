@@ -1,7 +1,6 @@
 #include "common.h"
 
 int main() {
-    init();
-    aware();
+    run(aware);
     return 0;
 }
